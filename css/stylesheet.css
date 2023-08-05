@@ -3,7 +3,7 @@
     font-family: OpenSans-Regular;
     font-weight: 400;
     font-style: normal;
-    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Regular.woff");
+    src: url("../fonts/OpenSans-Regular.woff");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
     font-family: OpenSans-Bold;
     font-weight: 400;
     font-style: normal;
-    src: url("https://netology-code.github.io/html-2-diploma/sources/fonts/OpenSans-Bold.woff");
+    src: url("../fonts/OpenSans-Bold.woff");
 }
 
 * {
@@ -31,7 +31,7 @@
 }
 
 .header {
-    background-image: url("https://netology-code.github.io/html-2-diploma/sources/images/banner-bg.jpg");
+    background-image: url("../img/banner-bg.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -306,7 +306,7 @@
 
 .button-search {
     background-color: #b59f5b;
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/search.svg);
+    background-image: url(../svg/search.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 18px;
@@ -440,7 +440,7 @@
 
 .dribbble {
     display: block;
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/001-dribbble.svg);
+    background-image: url(../svg/001-dribbble.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px;
@@ -450,7 +450,7 @@
 
 .pinterest {
     display: block;
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/002-pinterest.svg);
+    background-image: url(../svg/002-pinterest.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px;
@@ -460,7 +460,7 @@
 
 .tumblr {
     display: block;
-    background-image: url(https://netology-code.github.io/html-2-diploma/sources/images/social/003-tumblr.svg);
+    background-image: url(../svg/003-tumblr.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 20px;
