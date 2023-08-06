@@ -200,15 +200,20 @@
 .feedback-title::after {
     content: "";
     display: block;
-    width: 65px;
+    width: 66px;
     height: 3px;
-    margin: 15px auto 30px auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 14px;
+    margin-bottom: 29px;
+    text-align: center;
     background-color: #b59f5b;
-    opacity: 0.4;
 }
+
 .feedback-form {
     font-size: 13px;
 }
+
 .form-row {
     margin-bottom: 20px;
 }
@@ -225,7 +230,7 @@
     background-size: 8px;
 
     -webkit-appearance: none;
-	-moz-appearance: none;
+    -moz-appearance: none;
 }
 
 .question-select:focus,
@@ -328,11 +333,14 @@
 .trends-title::after {
     content: "";
     display: block;
-    width: 65px;
+    width: 66px;
     height: 3px;
-    margin: 15px auto 30px auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 14px;
+    margin-bottom: 29px;
+    text-align: center;
     background-color: #b59f5b;
-    opacity: 0.4;
 }
 
 .trends-wrp {
@@ -468,6 +476,8 @@
 
 .post-img {
     margin-right: 30px;
+    width: 381px;
+    height: 293px;
 }
 
 .post-tag {
@@ -742,11 +752,14 @@
 .shop-title::after {
     content: "";
     display: block;
-    width: 65px;
+    width: 66px;
     height: 3px;
-    margin: 15px auto 30px auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 14px;
+    margin-bottom: 29px;
+    text-align: center;
     background-color: #b59f5b;
-    opacity: 0.4;
 }
 
 .goodss-list {
@@ -900,4 +913,175 @@
     font-family: OpenSans-Bold, sans-serif;
     font-size: 12px;
     color: #999999;
+}
+
+.header-logo-mobile {
+    display: none;
+}
+
+@media (min-width: 641px) and (max-width: 1199px) {
+    .header {
+        padding: 40px 0 125px;
+        background-image: url("../img/banner-bg-tablet.jpg");
+    }
+
+    .container {
+        width: 91%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .header-logo {
+        width: 160px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .header-title {
+        width: 89%;
+        max-width: 600px;
+        margin: 105px auto 0 auto;
+        font-size: 40px;
+        line-height: 1.375;
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        background-image: url("../img/banner-mobile.jpg");
+        min-width: 360px;
+        max-width: 640px;
+    }
+
+    .container {
+        width: 91%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .wrapper {
+        justify-content: flex-end;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .header-logo {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .header-logo-mobile {
+        display: block;
+        text-align: center;
+        width: 75%;
+        margin: 175px auto 0 auto;
+    }
+
+    .header-title {
+        max-width: 360px;
+        margin: 45px auto 0 auto;
+        font-size: 26px;
+        line-height: 1.38;
+    }
+
+    .trends {
+        margin-top: 45px;
+    }
+
+    .trends-wrp {
+        flex-wrap: wrap;
+    }
+
+    .trends-title {
+        font-size: 16px;
+    }
+
+    .trends-title::after {
+        margin: 12px auto 25px auto;
+    }
+
+    .trends-item {
+        padding: 30px 53px 30px 53px;
+    }
+
+    .trends-title-link {
+        font-size: 17px;
+    }
+
+    .trends-item-wrp {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 3px;
+        padding-top: 160px;
+    }
+
+    .main-conteiner {
+        width: auto;
+    }
+
+    .post-list {
+        width: auto;
+        margin: auto;
+    }
+
+    .post {
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 56px;
+    }
+
+    .post-img {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .sidepanel {
+        width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .input-search {
+        width: 100%;
+    }
+
+    .shop-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .goods {
+        margin-top: 40px;
+    }
+
+    .goods-wrp {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .goods-wrp:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .footer-social {
+        width: 100%;
+    }
 }
