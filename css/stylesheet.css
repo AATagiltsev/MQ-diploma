@@ -121,18 +121,195 @@
     text-decoration: underline;
 }
 
-.main-conteiner {
+.menu-button {
+    display: none;
+    width: 23px;
+    height: 18px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: relative;
+    text-indent: -9999px;
+    cursor: pointer;
+}
+
+.menu-button:before,
+.menu-button:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+}
+
+.menu-button:before {
+    top: 0;
+}
+
+.menu-button:after {
+    bottom: 0;
+}
+
+.menu-button-label {
+    width: 100%;
+    height: 2px;
+    margin-top: -1px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.pop-up {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+
     display: flex;
     justify-content: center;
-    align-content: flex-start;
-    font-family: OpenSans-Regular, sans-serif;
-    padding-top: 64px;
-    padding-bottom: 64px;
+    align-items: center;
+}
 
-    width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    flex-wrap: wrap;
+.pop-up-container {
+    position: relative;
+    width: 390px;
+    max-width: 700px;
+    padding: 30px 20px;
+    padding: 54px 30px 128px 30px;
+    background-color: white;
+}
+
+.feedback {
+    font-size: 12px;
+    font-family: OpenSans-Regular, sans-serif;
+}
+
+.feedback-title {
+    font-size: 20px;
+    color: #0f0d0e;
+    font-family: OpenSans-Bold, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.feedback-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    margin: 15px auto 30px auto;
+    background-color: #b59f5b;
+    opacity: 0.4;
+}
+.feedback-form {
+    font-size: 13px;
+}
+.form-row {
+    margin-bottom: 20px;
+}
+
+.question-select {
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 13px 10px;
+    font-size: inherit;
+    color: grey;
+    border: none;
+    background: #f3f2f2 url(../svg/form-arrows.svg) no-repeat right 10px center;
+    background-size: 8px;
+
+    -webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.question-select:focus,
+.question-select:hover {
+    outline: 1px solid #b59f5b;
+    outline-offset: -1px;
+}
+
+.form-hint {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.radio-group {
+    display: inline-block;
+}
+
+.radio-group:nth-of-type(n+2) {
+    margin-left: 5px;
+}
+
+.radio-group-text::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+    background: url("../svg/form-empty-circle.svg") no-repeat center center;
+    background-size: 100%;
+}
+
+.radio {
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+}
+
+.radio:checked~.radio-group-text::before {
+    background-image: url("../svg/form-circle.svg");
+}
+
+.form-textarea {
+    width: 95%;
+    min-height: 100px;
+    resize: none;
+    padding: 13px 10px;
+    margin-top: 10px;
+    font: inherit;
+    color: grey;
+    background-color: #f3f2f2;
+    border: none;
+}
+
+.form-textarea:hover,
+.form-textarea:focus {
+    outline: 1px solid #b59f5b;
+    outline-offset: -1px;
+}
+
+.send-button {
+    width: 100%;
+    padding: 15px;
+    font-size: inherit;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    background-color: #b59f5b;
+    border: none;
+}
+
+.send-button:hover {
+    background-color: #323232;
+}
+
+.popup-close {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border: none;
 }
 
 .trends {
@@ -258,6 +435,20 @@
 .trend-title-link:hover {
     color: #b59f5b;
     outline: none;
+}
+
+.main-conteiner {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    font-family: OpenSans-Regular, sans-serif;
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
 }
 
 .post-list {
