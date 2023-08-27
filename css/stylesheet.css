@@ -843,13 +843,16 @@
     display: inline-block;
     font-size: 14px;
     width: 140px;
-    height: 48px;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
     background-color: #b59f5b;
     text-decoration: none;
     border: none;
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
 }
 
 .footer {
