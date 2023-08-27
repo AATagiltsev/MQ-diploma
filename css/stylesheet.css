@@ -358,6 +358,7 @@
     background-color: #1c2141;
     position: relative;
     z-index: 0;
+    box-sizing: border-box;
 }
 
 .trends-item-wrp::before {
@@ -374,7 +375,7 @@
 
 .trends-item-wrp:last-child {
     width: 25%;
-    margin-right: 0;
+    margin-right: 4px;
 }
 
 .trends-item-wrp-1 {
