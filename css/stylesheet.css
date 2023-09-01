@@ -789,6 +789,7 @@
     padding: 40px 20px 25px 20px;
     margin-top: -30px;
     border: 3px solid rgba(181, 159, 91, 0.7);
+    font-family: OpenSans-Regular, sans-serif;
 }
 
 .goods-title {
@@ -819,6 +820,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: OpenSans-Bold, sans-serif;
 }
 
 .price-wrp {
@@ -944,6 +946,10 @@
         display: none;
     }
 
+    .menu-button {
+        display: block;
+    }
+
     .header-title {
         width: 89%;
         max-width: 600px;
@@ -992,9 +998,11 @@
         width: auto;
         flex-wrap: nowrap;
     }
+
     .post {
         flex-wrap: wrap;
     }
+
     .goods-wrp {
         width: calc(50% - 13.5px);
         margin-bottom: 25px;
@@ -1008,7 +1016,7 @@
     .footer {
         padding-left: 35px;
         padding-right: 35px;
-        width: 1170px;
+        width: auto;
     }
 
     .footer-social {
