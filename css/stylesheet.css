@@ -927,6 +927,7 @@
     .header {
         padding: 40px 0 125px;
         background-image: url("../img/banner-bg-tablet.jpg");
+        min-width: auto;
     }
 
     .container {
@@ -953,7 +954,7 @@
 
     .trends {
         margin-top: 50px;
-        min-width: 1200px;
+        min-width: 641px;
     }
 
     .trends-wrp {
@@ -988,8 +989,12 @@
     .main-conteiner {
         padding-left: 35px;
         padding-right: 35px;
+        width: auto;
+        flex-wrap: nowrap;
     }
-
+    .post {
+        flex-wrap: wrap;
+    }
     .goods-wrp {
         width: calc(50% - 13.5px);
         margin-bottom: 25px;
