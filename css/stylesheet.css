@@ -178,9 +178,8 @@
 .pop-up-container {
     position: relative;
     width: 390px;
-    max-width: 700px;
     padding: 30px 20px;
-    padding: 54px 30px 128px 30px;
+    padding: 54px 30px 54px 30px;
     background-color: white;
 }
 
@@ -275,7 +274,8 @@
 }
 
 .form-textarea {
-    width: 95%;
+    width: 100%;
+    box-sizing: border-box;
     min-height: 100px;
     resize: none;
     padding: 13px 10px;
@@ -462,7 +462,6 @@
 
 .post-list {
     margin-right: 120px;
-
     width: 778px;
 }
 
@@ -477,7 +476,8 @@
 
 .post-img {
     margin-right: 30px;
-    width: 381px;
+    max-width: 381px;
+    width: 100%;
     height: 293px;
 }
 
@@ -938,6 +938,10 @@
         padding-right: 0;
     }
 
+    .wrapper {
+        width: 100%;
+    }
+
     .header-logo {
         width: 160px;
     }
@@ -965,6 +969,14 @@
 
     .trends-wrp {
         flex-wrap: wrap;
+    }
+
+    .trends-wrp:nth-child(even) {
+        margin-right: 0;
+    }
+
+    .trends-item-wrp:last-child {
+        width: calc(50% - 4px);
     }
 
     .trends-title {
@@ -1001,6 +1013,22 @@
 
     .post {
         flex-wrap: wrap;
+        padding-bottom: 42px;
+        border-bottom: 3px solid #e0e0e0;
+        padding-top: 42px;
+        margin-bottom: 0;
+    }
+    .post-img {
+        max-width: 100%;
+        margin-right: 0;
+        height: auto;
+    }
+    /* .post:last-child {
+        margin-bottom: 0;
+    } */
+
+    .post-list {
+        margin-right: 35px;
     }
 
     .goods-wrp {
